@@ -1,17 +1,17 @@
 ---
-import '../css/blog-card-component.css';
+import TagGroupComponent from "./TagGroupComponent.astro";
+import "../css/blog-card-component.css";
 ---
 
 <li>
-    <article>
-        <a href="post-url">
-            <header>
-                <h3>Post Title</h3>
-                <time datetime="2023-02-01">January 1, 2023</time>
-            </header>
-            <footer>
-            <!-- Post tags go here -->
-            </footer>
-        </a>
+    <article class="blog-card">
+        <header class="blog-card--header">
+            <h3 class="blog-card--title">Building custom websites with HTML, CSS and JS, powered by Astro</h3>
+            <time class="blog-card--date" datetime="2023-02-01">January 1, 2023</time>
+        </header>
+        <footer class="blog-card--footer">
+            <TagGroupComponent />
+        </footer>
+        <a href="post-url" class="blog-card--link"></a>
     </article>
 </li>

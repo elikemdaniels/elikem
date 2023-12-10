@@ -1,3 +1,29 @@
-li {
-  list-style-type: none;
+.blog-card--header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.blog-card--header time {
+  order: -1;
+}
+
+.blog-card {
+  position: relative;
+  display: block;
+  padding: 3.5rem;
+}
+
+.blog-card--header,
+.blog-card--footer {
+  z-index: 1;
+}
+
+.blog-card--link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
 }
