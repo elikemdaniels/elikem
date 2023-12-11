@@ -1,22 +1,21 @@
+.blog-card {
+  position: relative;
+  display: block;
+  padding: 3.5rem;
+  border: 1px solid #d0d5dd;
+  border-radius: 3rem;
+  box-shadow: 0px 8px 0px 0px #ffffff;
+}
+
 .blog-card--header {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 }
 
-.blog-card--header time {
+.blog-card--date {
+  font-size: 0.875rem;
   order: -1;
-}
-
-.blog-card {
-  position: relative;
-  display: block;
-  padding: 3.5rem;
-}
-
-.blog-card--header,
-.blog-card--footer {
-  z-index: 1;
 }
 
 .blog-card--link {
@@ -26,4 +25,10 @@
   left: 0;
   right: 0;
   z-index: 0;
+}
+
+.blog-card--footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.5rem;
 }
